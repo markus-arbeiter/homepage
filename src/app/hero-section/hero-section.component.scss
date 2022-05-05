@@ -1,0 +1,122 @@
+.heroSectionContainer {
+    height: 65vh;
+    background-color: linear;
+    background: linear-gradient(var(--light-white), white);
+    border-bottom: 1px solid #dee2e6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heroSectionContentContainer {
+    height: 90%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+
+.heroSectionIllustration {
+    width: 48%;
+    img {
+        object-fit: contain;
+        max-width: 100%;
+    }
+}
+
+.carouselDot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #969694;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.heroSectionImageContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.carouselContainer {
+    margin-top: 35px;
+}
+
+.carouselSubContainer {
+    width: 12%;
+    display: flex;
+    justify-content: space-around;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.heroSectionTextContainer {
+    width: 47%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.heroSectionText {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px; 
+    margin-bottom: 10px;
+
+}
+
+.link_wrapper {
+    position: relative;
+}
+
+a {
+    display: block;
+    width: 250px;
+    height: 50px;
+    line-height: 50px;
+    text-decoration: none;
+    text-align: center;
+    color: #ffb617;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 1.5px solid #ffb617;
+    transition: all 0.175s;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    border: 1px solid transparent;
+    position: absolute;
+    transform: rotate(45deg);
+    right: 0;
+    top: 0;
+    z-index: -1;
+    transition: all 0.175s;
+}
+
+.icon svg {
+    width: 30px;
+    position: absolute;
+    top: calc(50% - 15px);
+    left: calc(50% - 15px);
+    transform: rotate(-45deg);
+    fill: var(--color-blue);
+    transition: all 0.175s;
+}
+
+a:hover {
+    width: 200px;
+    border: 1.5px solid var(--color-blue);
+    background: transparent;
+    color: var(--color-blue);
+}
+
+a:hover + .icon {
+    border: 1.5px solid var(--color-blue);
+    right: -25%;
+}

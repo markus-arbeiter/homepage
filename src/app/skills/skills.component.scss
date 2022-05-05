@@ -1,0 +1,41 @@
+.skillContainer{
+    background: linear-gradient(white, var(--light-white));
+    height: 30vh;
+    border-bottom: 1px solid #dee2e6;
+
+}
+
+.skillHeading{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 2.2rem;
+    color: var(--color-blue);
+}
+carousel{
+    width: 75%;
+    margin-right: auto; 
+    margin-left: auto;
+    height: 18vh !important; 
+    margin-top: 20px;
+    div{
+        cursor: default !important;
+    }
+}
+
+.carousel-cell{
+    img{
+        height: 120px !important;
+        width: 120px !important;
+    }
+}
+
+.oneSkillContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    span{
+        font-size: 1.2rem;
+        margin-top: 10px; 
+    }
+}

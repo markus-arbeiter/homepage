@@ -1,0 +1,34 @@
+<div class="portfolioContainer">
+    <div class="portfolioHeading">Portfolio</div>
+    <div class="portfolioPictureContainer">
+        <div class="portfolioPictureRow">
+            <div class="onePortfolioItem">
+                <div class="portfolioOverlay">
+                    <span>Main project: cloud-based software (AWS) for the administration of our ebay Store</span>
+                </div>
+                <img src="../../assets/proof of work/main_project.JPG" class="portfolioImage" style="object-fit: scale-down;">
+            </div>
+            <div class="onePortfolioItem">
+                <div class="portfolioOverlay">
+                    <span>Frontend for our (still planned) online appearance</span>
+                </div>
+                <img src="../../assets/proof of work/frontend_shop.JPG" class="portfolioImage">
+            </div>
+        </div>
+        <div class="portfolioPictureRow">
+            <div class="onePortfolioItem">
+                <div class="portfolioOverlay">
+                    <span>First try for our online appearance without django, only with firebase and Angular</span>
+                </div>
+                <img src="../../assets/proof of work/phila_world.JPG" class="portfolioImage">
+            </div>
+            <div class="onePortfolioItem">
+                <div class="portfolioOverlay">
+                    <span>Scrum Certificate (PSM I)</span>
+                </div>
+                <img src="../../assets/proof of work/scrum_certificate.JPG" class="portfolioImage">
+            </div>
+        </div>
+    </div>
+</div>
+<app-portfolio-overlay class="overlay" *ngIf="project > 0"></app-portfolio-overlay>
